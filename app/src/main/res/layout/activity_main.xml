@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.22"
+            android:background="#2196F3">
+
+            <br.sofex.com.drawimage.ProportionalImageView
+                android:id="@+id/proportionalImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/depois" />
+
+            <br.sofex.com.Draw.Draw
+                android:id="@+id/drawimg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="2dp"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                                android:id="@+id/fab_Paint"
+                                                android:layout_width="60dp"
+                                                android:layout_height="60dp"
+                                                android:layout_marginLeft="2dp"
+                                                android:clickable="true"
+                                                app:backgroundTint="#00BCD4"
+                                                app:srcCompat="@drawable/painting_palette64white" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/rl_cores"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1">
+
+                                            <androidx.core.widget.NestedScrollView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fillViewport="true">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                                        android:id="@+id/fab_verde"
+                                                        android:layout_width="40dp"
+                                                        android:layout_height="40dp"
+                                                        android:layout_marginTop="2dp"
+                                                        android:layout_marginBottom="2dp"
+                                                        android:backgroundTint="#19DF0B"
+                                                        android:clickable="true" />
+
+                                                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                                        android:id="@+id/fab_vermelho"
+                                                        android:layout_width="40dp"
+                                                        android:layout_height="40dp"
+                                                        android:layout_marginTop="2dp"
+                                                        android:layout_marginBottom="2dp"
+                                                        android:backgroundTint="#F40606"
+                                                        android:clickable="true" />
+
+                                                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                                        android:id="@+id/fab_azul"
+                                                        android:layout_width="40dp"
+                                                        android:layout_height="40dp"
+                                                        android:layout_marginTop="2dp"
+                                                        android:layout_marginBottom="2dp"
+                                                        android:backgroundTint="#0022FF"
+                                                        android:clickable="true" />
+
+                                                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                                        android:id="@+id/fab_preto"
+                                                        android:layout_width="40dp"
+                                                        android:layout_height="40dp"
+                                                        android:layout_marginTop="2dp"
+                                                        android:layout_marginBottom="2dp"
+                                                        android:backgroundTint="#000000"
+                                                        android:clickable="true" />
+
+                                                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                                        android:id="@+id/fab_amarelo"
+                                                        android:layout_width="40dp"
+                                                        android:layout_height="40dp"
+                                                        android:layout_marginTop="2dp"
+                                                        android:layout_marginBottom="2dp"
+                                                        android:backgroundTint="#FFEB3B"
+                                                        android:clickable="true" />
+
+                                                </LinearLayout>
+                                            </androidx.core.widget.NestedScrollView>
+
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:gravity="center|top|left"
+                                        android:orientation="horizontal">
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center">
+
+                                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                                android:id="@+id/fab_Del"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="4dp"
+                                                android:clickable="true"
+                                                app:backgroundTint="#00BCD4"
+                                                app:srcCompat="@drawable/baseline_face_black_64_trans" />
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/rl_delbuttons"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            tools:visibility="visible">
+
+                                            <androidx.core.widget.NestedScrollView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:fillViewport="true">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                                        android:id="@+id/fab_delAll"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:clickable="true"
+                                                        app:backgroundTint="#00BCD4"
+                                                        app:fabCustomSize="50dp"
+                                                        app:srcCompat="@drawable/deleteface64_trans" />
+
+                                                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                                        android:id="@+id/fab_delPoint"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginLeft="2dp"
+                                                        android:layout_marginTop="2dp"
+                                                        android:clickable="true"
+                                                        app:backgroundTint="#00BCD4"
+                                                        app:fabCustomSize="50dp"
+                                                        app:srcCompat="@drawable/deletefacepart64_trans" />
+                                                </LinearLayout>
+                                            </androidx.core.widget.NestedScrollView>
+
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_del1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0.8"
+                            android:gravity="right|top"
+                            tools:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_Spin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center">
+
+                                    <androidx.core.widget.NestedScrollView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fillViewport="true">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <Spinner
+                                                android:id="@+id/Spin_Points"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content" />
+                                        </LinearLayout>
+                                    </androidx.core.widget.NestedScrollView>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+
+                                    <ImageButton
+                                        android:id="@+id/img_btn_del"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@android:drawable/ic_delete" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
